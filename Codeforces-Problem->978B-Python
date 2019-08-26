@@ -1,0 +1,43 @@
+'''
+||       ||      =========   ||======    || . >>                 **            \\       //
+||       ||    ||       ((   ||          ||  . >>            **     **          \\     //
+||       ||    ||      ((    ||          ||    . >>        **         **         \\   //
+||=======||    ||     ((     ||=====     ||     . >>       **         **           ||
+||       ||    ||      ((    ||          ||     . >>       **         **           ||
+||       ||    ||            ||          ||    . >>          **     **             ||
+||       ||    ||            ||======    || . >>                 **                ||
+ 
+ 
+ 
+ 
+ 
+ 
+    for i in range(n-1):
+        if s[i]=='x' and s[i+1]=='x':
+            if s[i+2]=='x':
+                counter+=1
+    print(counter)
+ 
+'''
+ 
+ 
+a=int(input())
+s=input()
+h=len(s)
+counter=0
+numx=0
+if "xxx" not in s:
+    print(0)
+else:
+    y=set(s)
+ 
+    n=len(y)
+    if n==1:
+        print(a-2)
+    else:
+        for i in range(h - 2):
+            if s[i] == 'x' and s[i + 1] == 'x':
+                if s[i + 2] == 'x':
+                    counter += 1
+        print(counter)
+ 
